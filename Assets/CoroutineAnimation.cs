@@ -24,14 +24,14 @@ public class CoroutineAnimation : MonoBehaviour
 
     IEnumerator demo()
     {
-        upperpanel.anchoredPosition=new Vector2(0,242);
-        shopsocial.anchoredPosition=new Vector2(-299,60.1f);
-        while (upperpanel.anchoredPosition.y>-1 || shopsocial.anchoredPosition.x<0)
+        upperpanel.anchoredPosition=new Vector2(0,176);
+        shopsocial.anchoredPosition=new Vector2(-200,406);
+        while (upperpanel.anchoredPosition.y>-82 || shopsocial.anchoredPosition.x<98)
         {
             //yield return new WaitForSeconds(0.001f);
-            upperpanel.anchoredPosition=new Vector2(0,upperpanel.anchoredPosition.y-4);
-            shopsocial.anchoredPosition=new Vector2(shopsocial.anchoredPosition.x+4,60.1f);
-            //print(upperpanel.anchoredPosition.y);
+            upperpanel.anchoredPosition=new Vector2(0,upperpanel.anchoredPosition.y-2);
+            shopsocial.anchoredPosition=new Vector2(shopsocial.anchoredPosition.x+2,406);
+            print(upperpanel.anchoredPosition.y);
             yield return null;
         }
     }
@@ -63,13 +63,13 @@ public class CoroutineAnimation : MonoBehaviour
         {
             yield return new WaitForSeconds(.01f);
             obj1.transform.localScale=new Vector2(obj1.transform.localScale.x+.1f,obj1.transform.localScale.y+.1f);
-            print("scale");
+            //print("scale");
         }
         while (obj1.transform.localScale.x>1 && obj1.transform.localScale.y>1)
         {
             yield return new WaitForSeconds(.01f);
             obj1.transform.localScale=new Vector2(obj1.transform.localScale.x-.01f,obj1.transform.localScale.y-.01f);
-            print("scale");
+            //print("scale");
         }
         yield return null;
     }
