@@ -24,14 +24,14 @@ public class CoroutineAnimation : MonoBehaviour
 
     IEnumerator demo()
     {
-        upperpanel.anchoredPosition=new Vector2(0,176);
-        shopsocial.anchoredPosition=new Vector2(-200,406);
-        while (upperpanel.anchoredPosition.y>-82 || shopsocial.anchoredPosition.x<98)
+        upperpanel.anchoredPosition=new Vector2(0,237);
+        shopsocial.anchoredPosition=new Vector2(-261,1);
+        while (upperpanel.anchoredPosition.y>1 || shopsocial.anchoredPosition.x<1)
         {
             //yield return new WaitForSeconds(0.001f);
-            upperpanel.anchoredPosition=new Vector2(0,upperpanel.anchoredPosition.y-2);
-            shopsocial.anchoredPosition=new Vector2(shopsocial.anchoredPosition.x+2,406);
-            print(upperpanel.anchoredPosition.y);
+            upperpanel.anchoredPosition=new Vector2(0,upperpanel.anchoredPosition.y-1);
+            shopsocial.anchoredPosition=new Vector2(shopsocial.anchoredPosition.x+1,1);
+            print(shopsocial.anchoredPosition.x);
             yield return null;
         }
     }
