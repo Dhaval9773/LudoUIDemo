@@ -58,8 +58,8 @@ public class CoroutineAnimation : MonoBehaviour
     }
     IEnumerator eventbutton()
     {
-        eventb.anchoredPosition=new Vector2(-251,-1);
-        while (eventb.anchoredPosition.x<0.1f)
+        eventb.anchoredPosition=new Vector2(-222,-1);
+        while (eventb.anchoredPosition.x<0.7f)
         {
            
             print(eventb.anchoredPosition.x);
