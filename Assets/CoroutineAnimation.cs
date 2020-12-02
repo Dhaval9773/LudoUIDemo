@@ -73,21 +73,27 @@ public class CoroutineAnimation : MonoBehaviour
     }
     IEnumerator chatbutton()
     {
-        /*chatb.anchoredPosition = new Vector2(-222, 0.2);
-        while (chatb.anchoredPosition.x < -0.2f)
-        {*/
-
-            print(chatb.anchoredPosition.x);
-            print(chatb.anchoredPosition.y);
-            //chatb.anchoredPosition = new Vector2(chatb.anchoredPosition.x - 1, 0.2);
+        chatb.anchoredPosition = new Vector2(282, 0.2f);
+        while (chatb.anchoredPosition.x > -0.2f)
+        {
+            //print(chatb.anchoredPosition.x);
+            //print(chatb.anchoredPosition.y);
+            chatb.anchoredPosition = new Vector2(chatb.anchoredPosition.x - 1, 0.2f);
 
             yield return null;
-        //}
-        
+        }
     }
     IEnumerator ranksetting()
     {
-        yield return null;
+        ranksettingpanel.anchoredPosition = new Vector2(262, 0);
+        while (ranksettingpanel.anchoredPosition.x > -0.5f)
+        {
+            print(ranksettingpanel.anchoredPosition.x);
+            print(ranksettingpanel.anchoredPosition.y);
+            ranksettingpanel.anchoredPosition = new Vector2(ranksettingpanel.anchoredPosition.x - 1.5f,0);
+
+            yield return null;
+        }
     }
 
     IEnumerator Delay(List<GameObject> obj)
