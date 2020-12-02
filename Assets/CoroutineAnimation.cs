@@ -17,23 +17,38 @@ public class CoroutineAnimation : MonoBehaviour
 
     private void OnEnable()
     {
-        StartCoroutine(demo());
+        StartCoroutine(upperpanelcoroutine());
+        StartCoroutine(shopsocialcoroutine());
         StartCoroutine(Delay(btn));
         
     }
 
-    IEnumerator demo()
+    IEnumerator upperpanelcoroutine()
     {
         upperpanel.anchoredPosition=new Vector2(0,237);
-        shopsocial.anchoredPosition=new Vector2(-261,1);
-        while (upperpanel.anchoredPosition.y>1 || shopsocial.anchoredPosition.x<1)
+        
+        while (upperpanel.anchoredPosition.y>1 )
         {
             //yield return new WaitForSeconds(0.001f);
             upperpanel.anchoredPosition=new Vector2(0,upperpanel.anchoredPosition.y-1);
-            shopsocial.anchoredPosition=new Vector2(shopsocial.anchoredPosition.x+1,1);
-            print(shopsocial.anchoredPosition.x);
+            
+            print(upperpanel.anchoredPosition.y);
             yield return null;
         }
+    }
+
+    IEnumerator shopsocialcoroutine()
+    {
+        shopsocial.anchoredPosition=new Vector2(-261,1);
+        while (shopsocial.anchoredPosition.x<1)
+        {
+            //yield return new WaitForSeconds(0.001f);
+           
+            shopsocial.anchoredPosition=new Vector2(shopsocial.anchoredPosition.x+1,1);
+            //print(upperpanel.anchoredPosition.y);
+            yield return null;
+        }
+        yield return null;
     }
 
     IEnumerator Delay(List<GameObject> obj)
