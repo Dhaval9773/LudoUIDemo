@@ -18,7 +18,7 @@ public class CoroutineAnimation : MonoBehaviour
     private void OnEnable()
     {
         StartCoroutine(upperpanelcoroutine());
-        StartCoroutine(shopsocialcoroutine());
+        StartCoroutine(shopsocialcoroutine()); 
         StartCoroutine(Delay(btn));
         
     }
@@ -80,6 +80,7 @@ public class CoroutineAnimation : MonoBehaviour
             obj1.transform.localScale=new Vector2(obj1.transform.localScale.x+.1f,obj1.transform.localScale.y+.1f);
             //print("scale");
         }
+         
         while (obj1.transform.localScale.x>1 && obj1.transform.localScale.y>1)
         {
             yield return new WaitForSeconds(.01f);
