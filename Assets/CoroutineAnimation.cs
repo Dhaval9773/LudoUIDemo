@@ -65,18 +65,25 @@ public class CoroutineAnimation : MonoBehaviour
         while (eventb.anchoredPosition.x<0.7f)
         {
            
-            //print(eventb.anchoredPosition.x);
-            //yield return new WaitForSeconds(0.001f);
-           
             eventb.anchoredPosition=new Vector2(eventb.anchoredPosition.x+1,-1);
-            //print(upperpanel.anchoredPosition.y);
+            
             yield return null;
         }
         
     }
     IEnumerator chatbutton()
     {
-        yield return null;
+        chatb.anchoredPosition = new Vector2(-222, -1);
+        while (chatb.anchoredPosition.x < 0.7f)
+        {
+
+            print(chatb.anchoredPosition.x);
+            print(chatb.anchoredPosition.y);
+            //chatb.anchoredPosition = new Vector2(chatb.anchoredPosition.x - 1, -1);
+
+            yield return null;
+        }
+        
     }
     IEnumerator ranksetting()
     {
