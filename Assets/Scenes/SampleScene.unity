@@ -58896,7 +58896,7 @@ RectTransform:
   m_AnchorMax: {x: 0.18248151, y: 0.9235371}
   m_AnchoredPosition: {x: 0.10668945, y: -1}
   m_SizeDelta: {x: 1.8665161, y: -1.7441101}
-  m_Pivot: {x: 0, y: 1}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1618271890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58910,7 +58910,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -75218,6 +75218,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upperpanel: {fileID: 1202183473}
   shopsocial: {fileID: 95358229}
+  eventb: {fileID: 1618271889}
+  chatb: {fileID: 1799352995}
+  ranksettingpanel: {fileID: 167851387}
   btn:
   - {fileID: 1046343297}
   - {fileID: 1957032481}

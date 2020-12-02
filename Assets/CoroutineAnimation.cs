@@ -8,6 +8,9 @@ public class CoroutineAnimation : MonoBehaviour
    
     public RectTransform upperpanel;
     public RectTransform shopsocial;
+    public RectTransform eventb;
+    public RectTransform chatb;
+    public RectTransform ranksettingpanel;
    
     
 
@@ -18,7 +21,10 @@ public class CoroutineAnimation : MonoBehaviour
     private void OnEnable()
     {
         StartCoroutine(upperpanelcoroutine());
-        StartCoroutine(shopsocialcoroutine()); 
+        StartCoroutine(eventbutton());
+        StartCoroutine(chatbutton());
+        StartCoroutine(shopsocialcoroutine());
+        StartCoroutine(ranksetting());
         StartCoroutine(Delay(btn));
         
     }
@@ -32,7 +38,7 @@ public class CoroutineAnimation : MonoBehaviour
             //yield return new WaitForSeconds(0.001f);
             upperpanel.anchoredPosition=new Vector2(0,upperpanel.anchoredPosition.y-1);
             
-            print(upperpanel.anchoredPosition.y);
+            //print(upperpanel.anchoredPosition.y);
             yield return null;
         }
     }
@@ -46,8 +52,30 @@ public class CoroutineAnimation : MonoBehaviour
            
             shopsocial.anchoredPosition=new Vector2(shopsocial.anchoredPosition.x+1,1);
             //print(upperpanel.anchoredPosition.y);
-            yield return null;
+            
         }
+        yield return null;
+    }
+    IEnumerator eventbutton()
+    {
+        eventb.anchoredPosition=new Vector2(-251,-1);
+        while (eventb.anchoredPosition.x<0.1f)
+        {
+           
+            print(eventb.anchoredPosition.x);
+            //yield return new WaitForSeconds(0.001f);
+           
+            eventb.anchoredPosition=new Vector2(eventb.anchoredPosition.x+0.1f,-1);
+            //print(upperpanel.anchoredPosition.y);
+        }
+        yield return null;
+    }
+    IEnumerator chatbutton()
+    {
+        yield return null;
+    }
+    IEnumerator ranksetting()
+    {
         yield return null;
     }
 
