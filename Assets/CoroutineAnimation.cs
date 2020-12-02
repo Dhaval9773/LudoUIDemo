@@ -49,7 +49,7 @@ public class CoroutineAnimation : MonoBehaviour
         while (shopsocial.anchoredPosition.x<1)
         {
             //yield return new WaitForSeconds(0.001f);
-            print(shopsocial.anchoredPosition.x);
+            //print(shopsocial.anchoredPosition.x);
             shopsocial.anchoredPosition=new Vector2(shopsocial.anchoredPosition.x+1,1);
             //print(upperpanel.anchoredPosition.y);
             yield return null;
@@ -73,16 +73,16 @@ public class CoroutineAnimation : MonoBehaviour
     }
     IEnumerator chatbutton()
     {
-        chatb.anchoredPosition = new Vector2(-222, -1);
-        while (chatb.anchoredPosition.x < 0.7f)
-        {
+        /*chatb.anchoredPosition = new Vector2(-222, 0.2);
+        while (chatb.anchoredPosition.x < -0.2f)
+        {*/
 
             print(chatb.anchoredPosition.x);
             print(chatb.anchoredPosition.y);
-            //chatb.anchoredPosition = new Vector2(chatb.anchoredPosition.x - 1, -1);
+            //chatb.anchoredPosition = new Vector2(chatb.anchoredPosition.x - 1, 0.2);
 
             yield return null;
-        }
+        //}
         
     }
     IEnumerator ranksetting()
