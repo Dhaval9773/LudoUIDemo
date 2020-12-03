@@ -17,17 +17,10 @@ public class CoroutineAnimation : MonoBehaviour
 
     private void OnEnable()
     {
-        
-        /*StartCoroutine(upperpanelcoroutine());
-        StartCoroutine(eventbutton());
-        StartCoroutine(chatbutton());
-        StartCoroutine(shopsocialcoroutine());
-        StartCoroutine(ranksetting());*/
         StartCoroutine(eventshopsocial());
         StartCoroutine(upperpanelcoroutine());
         StartCoroutine(chatranksetting());
         StartCoroutine(Delay(btn));
-        
     }
 
     IEnumerator eventshopsocial()
