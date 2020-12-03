@@ -88,8 +88,8 @@ public class CoroutineAnimation : MonoBehaviour
         ranksettingpanel.anchoredPosition = new Vector2(262, 0);
         while (ranksettingpanel.anchoredPosition.x > -0.5f)
         {
-            print(ranksettingpanel.anchoredPosition.x);
-            print(ranksettingpanel.anchoredPosition.y);
+           // print(ranksettingpanel.anchoredPosition.x);
+            //print(ranksettingpanel.anchoredPosition.y);
             ranksettingpanel.anchoredPosition = new Vector2(ranksettingpanel.anchoredPosition.x - 1.5f,0);
 
             yield return null;

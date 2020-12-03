@@ -16,6 +16,7 @@ public class Currency : MonoBehaviour
 
     public void Enabledisable()
     {
+        print(this.gameObject);
         enable.SetActive(true);
         currencyimage.SetActive(true);
         currencycolor.color = ActiveColor;
@@ -28,9 +29,10 @@ public class Currency : MonoBehaviour
             obj.color = DeactiveColor;
         }
     }
-    
-    void Start()
+
+    private void Start()
     {
+        print(this.gameObject);
         enable.SetActive(true);
         currencyimage.SetActive(true);
         currencycolor.color = ActiveColor;
@@ -43,4 +45,6 @@ public class Currency : MonoBehaviour
             obj.color = DeactiveColor;
         }
     }
+
+   
 }

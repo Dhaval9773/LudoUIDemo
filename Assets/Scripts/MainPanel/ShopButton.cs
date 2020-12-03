@@ -23,10 +23,4 @@ public class ShopButton : MonoBehaviour
             obj.SetActive(true);
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
