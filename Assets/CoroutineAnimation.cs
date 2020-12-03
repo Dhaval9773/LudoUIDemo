@@ -11,22 +11,34 @@ public class CoroutineAnimation : MonoBehaviour
     public RectTransform eventb;
     public RectTransform chatb;
     public RectTransform ranksettingpanel;
-   
-    
-
     public List<GameObject> btn;
-    // Start is called before the first frame update
+   
     
 
     private void OnEnable()
     {
-        StartCoroutine(upperpanelcoroutine());
+        
+        /*StartCoroutine(upperpanelcoroutine());
         StartCoroutine(eventbutton());
         StartCoroutine(chatbutton());
         StartCoroutine(shopsocialcoroutine());
-        StartCoroutine(ranksetting());
+        StartCoroutine(ranksetting());*/
+        StartCoroutine(mainpanel());
         StartCoroutine(Delay(btn));
         
+    }
+    IEnumerator mainpanel()
+    {
+        upperpanel.anchoredPosition=new Vector2(0,237);
+        
+        while (upperpanel.anchoredPosition.y>1 )
+        {
+            //yield return new WaitForSeconds(0.001f);
+            upperpanel.anchoredPosition=new Vector2(0,upperpanel.anchoredPosition.y-1);
+            
+            //print(upperpanel.anchoredPosition.y);
+            yield return null;
+        }
     }
 
     IEnumerator upperpanelcoroutine()
