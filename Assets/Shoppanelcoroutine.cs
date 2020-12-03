@@ -14,7 +14,7 @@ public class Shoppanelcoroutine : MonoBehaviour
     
     private void OnEnable()
     {
-        StartCoroutine(RewardChestcoroutine());
+        
         StartCoroutine(firstrechargepanelcoroutine());
         StartCoroutine(Shopupperpanelcoroutine());
     }
@@ -41,7 +41,7 @@ public class Shoppanelcoroutine : MonoBehaviour
         while (shopupperpanel.anchoredPosition.y>1 )
         {
             //yield return new WaitForSeconds(0.001f);
-            shopupperpanel.anchoredPosition=new Vector2(0,shopupperpanel.anchoredPosition.y-1);
+            shopupperpanel.anchoredPosition=new Vector2(0,shopupperpanel.anchoredPosition.y-5);
             
             //print(upperpanel.anchoredPosition.y);
             yield return null;
@@ -50,6 +50,7 @@ public class Shoppanelcoroutine : MonoBehaviour
     IEnumerator firstrechargepanelcoroutine()
     {
         firstrechargepanel.transform.localScale=new Vector2(.1f,.1f);
+        rewardchest.transform.localScale = new Vector2(.1f, .1f);
         while (firstrechargepanel.transform.localScale.x<1.2 && firstrechargepanel.transform.localScale.y<1.2)
         {
             yield return new WaitForSeconds(.01f);
@@ -63,9 +64,23 @@ public class Shoppanelcoroutine : MonoBehaviour
             firstrechargepanel.transform.localScale=new Vector2(firstrechargepanel.transform.localScale.x-.01f,firstrechargepanel.transform.localScale.y-.01f);
             //print("scale");
         }
+        
+        while (rewardchest.transform.localScale.x < 1.2 && rewardchest.transform.localScale.y < 1.2)
+        {
+            yield return new WaitForSeconds(.01f);
+            rewardchest.transform.localScale = new Vector2(rewardchest.transform.localScale.x + .1f, rewardchest.transform.localScale.y + .1f);
+            //print("scale");
+        }
+
+        while (rewardchest.transform.localScale.x > 1 && rewardchest.transform.localScale.y > 1)
+        {
+            yield return new WaitForSeconds(.01f);
+            rewardchest.transform.localScale = new Vector2(rewardchest.transform.localScale.x - .01f, rewardchest.transform.localScale.y - .01f);
+            //print("scale");
+        }
     }
 
-    IEnumerator RewardChestcoroutine()
+    /*IEnumerator RewardChestcoroutine()
     {
         rewardchest.transform.localScale=new Vector2(.1f,.1f);
         while (rewardchest.transform.localScale.x<1.2 && rewardchest.transform.localScale.y<1.2)
@@ -81,5 +96,5 @@ public class Shoppanelcoroutine : MonoBehaviour
             rewardchest.transform.localScale=new Vector2(rewardchest.transform.localScale.x-.01f,rewardchest.transform.localScale.y-.01f);
             //print("scale");
         }
-    }
+    }*/
 }
