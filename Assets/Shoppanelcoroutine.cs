@@ -108,13 +108,13 @@ public class Shoppanelcoroutine : MonoBehaviour
         {
             Imagecolour.color+=new Color(0,0,0,i);
             i+=0.01f;
-            print(i);
+            // print(i);
         }
         else
         {
             Imagecolour.color+=new Color(0,0,0,i);
             i-=0.01f;
-            print(i);
+            // print(i);
             abc = false;
         }
     }

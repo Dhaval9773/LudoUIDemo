@@ -21854,6 +21854,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 584140398}
+        m_TargetAssemblyTypeName: currencybydefault, Assembly-CSharp
+        m_MethodName: bydefault
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &584140395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25112,7 +25124,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 3.71
 --- !u!222 &690624172
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -35562,7 +35574,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 2.7
+  m_PixelsPerUnitMultiplier: 2.33
 --- !u!222 &972564139
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -52916,7 +52928,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0055555557, y: 0}
   m_AnchorMax: {x: 1, y: 0.0743889}
-  m_AnchoredPosition: {x: -2.999878, y: 0}
+  m_AnchoredPosition: {x: -3, y: 0}
   m_SizeDelta: {x: 6, y: 1.141571}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1474557197
@@ -52985,8 +52997,8 @@ MonoBehaviour:
   - {fileID: 584140392}
   - {fileID: 369389935}
   - {fileID: 898710538}
-  ActiveColor: {r: 0, g: 0, b: 0, a: 0}
-  DeactiveColor: {r: 0, g: 0, b: 0, a: 0}
+  ActiveColor: {r: 0.027450982, g: 0.16078432, b: 0.454902, a: 1}
+  DeactiveColor: {r: 0.04705883, g: 0.7803922, b: 0.8745099, a: 1}
   Panel: {fileID: 0}
   DisabledPanels: []
 --- !u!1 &1476461053

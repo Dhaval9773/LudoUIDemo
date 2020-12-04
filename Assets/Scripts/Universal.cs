@@ -37,8 +37,9 @@ public class Universal : MonoBehaviour
     
     public void OnActive(GameObject obj)
     {
+        print(obj);
         //Active button
-        print(obj.name);
+        // print(obj.name);
         obj.transform.GetChild(0).gameObject.SetActive(true);
         obj.transform.GetChild(1).GetComponent<TMP_Text>().color = ActiveColor;
         obj.transform.GetChild(2).gameObject.SetActive(true);
