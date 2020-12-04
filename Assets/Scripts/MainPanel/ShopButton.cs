@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ShopButton : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class ShopButton : MonoBehaviour
     public Universal uniScript;
 
     public GameObject startButton;
+   
     
 
     public void goToShopPanel()
@@ -24,4 +26,7 @@ public class ShopButton : MonoBehaviour
         }
         uniScript.OnActive(startButton);
     }
+    
+
+   
 }

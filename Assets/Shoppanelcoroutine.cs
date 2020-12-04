@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Shoppanelcoroutine : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class Shoppanelcoroutine : MonoBehaviour
     public RectTransform firstrechargepanel;
     public RectTransform gemsPanel;
     public RectTransform coinsPanel;
+    public Image Imagecolour;
+    public float i = 0;
+    public bool abc=true;
     
     private void OnEnable()
     {
@@ -97,4 +101,26 @@ public class Shoppanelcoroutine : MonoBehaviour
             //print("scale");
         }
     }*/
+    public void changecolor()
+    {
+        Imagecolour.color=new Color(0,0,0,i);
+        if (abc==true && i<1)
+        {
+            Imagecolour.color+=new Color(0,0,0,i);
+            i+=0.01f;
+            print(i);
+        }
+        else
+        {
+            Imagecolour.color+=new Color(0,0,0,i);
+            i-=0.01f;
+            print(i);
+            abc = false;
+        }
+    }
+    void Update()
+    {
+        changecolor();
+
+    }
 }

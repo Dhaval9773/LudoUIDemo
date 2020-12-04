@@ -7,6 +7,9 @@ public class ShopBackButton : MonoBehaviour
     public List<GameObject> Disable;
     public List<GameObject> Enable;
 
+    public Shoppanelcoroutine xyz;
+
+    public Shoppanelcoroutine a;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +26,9 @@ public class ShopBackButton : MonoBehaviour
         {
             obj.SetActive(true);
         }
+
+        xyz.abc = true;
+        a.i = 0;
     }
 
     // Update is called once per frame
