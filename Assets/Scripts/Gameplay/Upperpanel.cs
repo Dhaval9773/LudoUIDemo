@@ -34,6 +34,7 @@ public class Upperpanel : MonoBehaviour
         {
             obj.color = DeactiveColor;
         }
+        Debug.Log("Enable",this);
     }
     
     void Start()
@@ -53,5 +54,6 @@ public class Upperpanel : MonoBehaviour
         {
             obj.color = DeactiveColor;
         }
+        Debug.Log("Start",this);
     }
 }

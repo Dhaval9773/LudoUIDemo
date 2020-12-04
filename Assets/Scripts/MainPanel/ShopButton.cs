@@ -6,11 +6,11 @@ public class ShopButton : MonoBehaviour
 {
     public List<GameObject> Disable;
     public List<GameObject> Enable;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+
+    public Universal uniScript;
+
+    public GameObject startButton;
+    
 
     public void goToShopPanel()
     {
@@ -22,5 +22,6 @@ public class ShopButton : MonoBehaviour
         {
             obj.SetActive(true);
         }
+        uniScript.OnActive(startButton);
     }
 }
