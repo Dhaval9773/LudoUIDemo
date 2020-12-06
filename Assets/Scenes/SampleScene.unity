@@ -17834,7 +17834,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 480430506}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a7bc370b90620b44ba008d2a4a531f8, type: 3}
   m_Name: 
@@ -17891,13 +17891,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 480430508}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: goToShopPanel
-        m_Mode: 1
+      - m_Target: {fileID: 2081862048}
+        m_TargetAssemblyTypeName: Universal, Assembly-CSharp
+        m_MethodName: OpenPanel
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1369432737}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -21426,6 +21426,7 @@ GameObject:
   - component: {fileID: 576073050}
   - component: {fileID: 576073052}
   - component: {fileID: 576073053}
+  - component: {fileID: 576073054}
   m_Layer: 0
   m_Name: ShopPanel
   m_TagString: Untagged
@@ -21533,6 +21534,22 @@ MonoBehaviour:
   Imagecolour: {fileID: 1793144003}
   i: 0
   abc: 1
+--- !u!114 &576073054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576073048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddca07b45594df64eba848338be2fb96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeactiveList: []
+  ActiveColor: {r: 0, g: 0, b: 0, a: 0}
+  DeactiveColor: {r: 0, g: 0, b: 0, a: 0}
+  DisabledPanels: []
 --- !u!1 &576179159
 GameObject:
   m_ObjectHideFlags: 0
@@ -24011,7 +24028,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 2.880005, y: -2.369995}
+  m_AnchoredPosition: {x: 2.880005, y: -2.369999}
   m_SizeDelta: {x: 7.662262, y: 4.7343903}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &643329596
@@ -27753,7 +27770,6 @@ MonoBehaviour:
   - {fileID: 1372836822}
   ActiveColor: {r: 0, g: 0.18039216, b: 0.48235297, a: 1}
   DeactiveColor: {r: 0, g: 0.8941177, b: 1, a: 1}
-  Panel: {fileID: 0}
   DisabledPanels:
   - {fileID: 2110346743}
   - {fileID: 1165647503}
@@ -35593,13 +35609,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 965421838}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: goToMainManu
-        m_Mode: 1
+      - m_Target: {fileID: 2081862048}
+        m_TargetAssemblyTypeName: Universal, Assembly-CSharp
+        m_MethodName: OpenPanel
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 2081862042}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -50156,9 +50172,9 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.013, y: 0.9367005}
-  m_AnchorMax: {x: 0.49800003, y: 0.9945167}
-  m_AnchoredPosition: {x: 0.19000244, y: -0.32006836}
-  m_SizeDelta: {x: 1.4764099, y: 0.21850586}
+  m_AnchorMax: {x: 0.499, y: 0.99648315}
+  m_AnchoredPosition: {x: -0.30999756, y: -0.17999268}
+  m_SizeDelta: {x: 0.4764099, y: 0.5078125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1384487471
 MonoBehaviour:
@@ -53599,7 +53615,6 @@ MonoBehaviour:
   - {fileID: 898710538}
   ActiveColor: {r: 0.027450982, g: 0.16078432, b: 0.454902, a: 1}
   DeactiveColor: {r: 0.04705883, g: 0.7803922, b: 0.8745099, a: 1}
-  Panel: {fileID: 0}
   DisabledPanels: []
 --- !u!1 &1476461053
 GameObject:
@@ -54725,13 +54740,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1506957362}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: goToMainManu
-        m_Mode: 1
+      - m_Target: {fileID: 2081862048}
+        m_TargetAssemblyTypeName: Universal, Assembly-CSharp
+        m_MethodName: OpenPanel
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 2081862042}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -54782,7 +54797,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1506957357}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 57f1febfb00956b4f8d1e3b9768e6f66, type: 3}
   m_Name: 
@@ -62420,7 +62435,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.998, y: 1}
-  m_AnchoredPosition: {x: -3.4700012, y: -2.22}
+  m_AnchoredPosition: {x: -3.4700012, y: -2.2200012}
   m_SizeDelta: {x: 6.5407715, y: 4.375458}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1706258554
@@ -63246,13 +63261,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1727432349}
-        m_TargetAssemblyTypeName: ShopButton, Assembly-CSharp
-        m_MethodName: goToShopPanel
-        m_Mode: 1
+      - m_Target: {fileID: 2081862048}
+        m_TargetAssemblyTypeName: Universal, Assembly-CSharp
+        m_MethodName: OpenPanel
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 576073048}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -63303,7 +63318,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1727432344}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a7bc370b90620b44ba008d2a4a531f8, type: 3}
   m_Name: 
@@ -67106,9 +67121,9 @@ RectTransform:
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.49300003, y: 0.9352513}
-  m_AnchorMax: {x: 0.94200003, y: 0.9945167}
-  m_AnchoredPosition: {x: -0.269989, y: -0.32006836}
-  m_SizeDelta: {x: -0.37149048, y: 0.22265625}
+  m_AnchorMax: {x: 0.94200003, y: 0.99648315}
+  m_AnchoredPosition: {x: -0.269989, y: -0.17871094}
+  m_SizeDelta: {x: -0.37149048, y: 0.50536346}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1846617674
 MonoBehaviour:
@@ -76010,8 +76025,14 @@ MonoBehaviour:
   DeactiveList: []
   ActiveColor: {r: 0, g: 0, b: 0, a: 0}
   DeactiveColor: {r: 0, g: 0, b: 0, a: 0}
-  Panel: {fileID: 0}
-  DisabledPanels: []
+  DisabledPanels:
+  - {fileID: 2081862042}
+  - {fileID: 576073048}
+  - {fileID: 963905694}
+  - {fileID: 1369432737}
+  - {fileID: 1657089636}
+  - {fileID: 92131764}
+  - {fileID: 942029515}
 --- !u!1 &2083583465
 GameObject:
   m_ObjectHideFlags: 0

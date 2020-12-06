@@ -12,21 +12,27 @@ public class Universal : MonoBehaviour
     public Color ActiveColor;
     public Color DeactiveColor;
    
-    public GameObject Panel;
+    //public GameObject Panel;
     public List<GameObject> DisabledPanels;
 
     public void Start()
     {
-        OnActive(DeactiveList[0]);
+        
     }
 
-    public void OpenPanel()
+    public void OpenPanel(GameObject obj)
     {
-        foreach(GameObject obj  in DisabledPanels)
+        //Activepanel
+        obj.SetActive(true);
+       
+        //Deactivepanel
+        foreach (GameObject obj1 in DisabledPanels)
         {
-            obj.SetActive(false);
+            if (obj != obj1)
+            {
+                obj1.SetActive(false);
+            }
         }
-        Panel.SetActive(true);
     }
     
     public void onClick(GameObject obj)

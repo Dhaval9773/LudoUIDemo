@@ -11,8 +11,11 @@ public class ShopButton : MonoBehaviour
     public Universal uniScript;
 
     public List<GameObject> startButton;
-   
-    
+
+    public void Start()
+    {
+        
+    }
 
     public void goToShopPanel()
     {
