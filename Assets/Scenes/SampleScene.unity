@@ -35405,6 +35405,7 @@ GameObject:
   - component: {fileID: 963905696}
   - component: {fileID: 963905698}
   - component: {fileID: 963905699}
+  - component: {fileID: 963905700}
   m_Layer: 0
   m_Name: EventsPanel
   m_TagString: Untagged
@@ -35508,6 +35509,22 @@ MonoBehaviour:
   - {fileID: 1625517573}
   - {fileID: 84076386}
   - {fileID: 1253567746}
+--- !u!114 &963905700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963905694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddca07b45594df64eba848338be2fb96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeactiveList: []
+  ActiveColor: {r: 0, g: 0, b: 0, a: 0}
+  DeactiveColor: {r: 0, g: 0, b: 0, a: 0}
+  DisabledPanels: []
 --- !u!1 &965421836
 GameObject:
   m_ObjectHideFlags: 0
@@ -50446,13 +50463,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1398613578}
-        m_TargetAssemblyTypeName: ShopBackButton, Assembly-CSharp
-        m_MethodName: goToMainManu
-        m_Mode: 1
+      - m_Target: {fileID: 2081862048}
+        m_TargetAssemblyTypeName: Universal, Assembly-CSharp
+        m_MethodName: OpenPanel
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 2081862042}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -50503,7 +50520,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1398613573}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 57f1febfb00956b4f8d1e3b9768e6f66, type: 3}
   m_Name: 
@@ -59144,13 +59161,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1618271893}
-        m_TargetAssemblyTypeName: ShopButton, Assembly-CSharp
-        m_MethodName: goToShopPanel
-        m_Mode: 1
+      - m_Target: {fileID: 2081862048}
+        m_TargetAssemblyTypeName: Universal, Assembly-CSharp
+        m_MethodName: OpenPanel
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 963905694}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -59201,7 +59218,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1618271888}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a7bc370b90620b44ba008d2a4a531f8, type: 3}
   m_Name: 
@@ -61003,6 +61020,7 @@ GameObject:
   - component: {fileID: 1657089637}
   - component: {fileID: 1657089639}
   - component: {fileID: 1657089638}
+  - component: {fileID: 1657089640}
   m_Layer: 0
   m_Name: ChatPannel
   m_TagString: Untagged
@@ -61069,6 +61087,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1657089636}
   m_CullTransparentMesh: 0
+--- !u!114 &1657089640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1657089636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddca07b45594df64eba848338be2fb96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeactiveList: []
+  ActiveColor: {r: 0, g: 0, b: 0, a: 0}
+  DeactiveColor: {r: 0, g: 0, b: 0, a: 0}
+  DisabledPanels: []
 --- !u!1 &1657591012
 GameObject:
   m_ObjectHideFlags: 0
@@ -65780,7 +65814,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1799352994}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a7bc370b90620b44ba008d2a4a531f8, type: 3}
   m_Name: 
@@ -65837,13 +65871,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1799352996}
-        m_TargetAssemblyTypeName: ShopButton, Assembly-CSharp
-        m_MethodName: goToShopPanel
-        m_Mode: 1
+      - m_Target: {fileID: 1657089640}
+        m_TargetAssemblyTypeName: Universal, Assembly-CSharp
+        m_MethodName: OpenPanel
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1657089636}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -68558,7 +68592,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1885926212}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 57f1febfb00956b4f8d1e3b9768e6f66, type: 3}
   m_Name: 
@@ -68612,13 +68646,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1885926214}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: goToMainManu
-        m_Mode: 1
+      - m_Target: {fileID: 2081862048}
+        m_TargetAssemblyTypeName: Universal, Assembly-CSharp
+        m_MethodName: OpenPanel
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 2081862042}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
