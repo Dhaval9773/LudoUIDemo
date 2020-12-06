@@ -12,7 +12,7 @@ public class currencybydefault : MonoBehaviour
     
     public void bydefault()
     {
-        print("log");
+        print("gems bydefault");
         uniScript.OnActive(startButton); 
     }
 }

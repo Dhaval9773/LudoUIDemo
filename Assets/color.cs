@@ -29,7 +29,7 @@ public class color : MonoBehaviour
     }
     void Update()
     {
-        changecolor();
+        //changecolor();
 
     }
 }

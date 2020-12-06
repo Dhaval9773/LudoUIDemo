@@ -17847,7 +17847,7 @@ MonoBehaviour:
   Enable:
   - {fileID: 1369432737}
   uniScript: {fileID: 0}
-  startButton: {fileID: 0}
+  startButton: []
 --- !u!114 &480430509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21945,7 +21945,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5915119aa3b50e1479f4c959f3f85051, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uniScript: {fileID: 753562310}
+  uniScript: {fileID: 1474557200}
   startButton: {fileID: 2047658570}
 --- !u!1 &586182915
 GameObject:
@@ -58599,7 +58599,7 @@ MonoBehaviour:
   Enable:
   - {fileID: 963905694}
   uniScript: {fileID: 0}
-  startButton: {fileID: 0}
+  startButton: []
 --- !u!1 &1619477973
 GameObject:
   m_ObjectHideFlags: 0
@@ -62464,7 +62464,9 @@ MonoBehaviour:
   Enable:
   - {fileID: 576073048}
   uniScript: {fileID: 753562310}
-  startButton: {fileID: 584140392}
+  startButton:
+  - {fileID: 2047658570}
+  - {fileID: 584140392}
 --- !u!1 &1734123958
 GameObject:
   m_ObjectHideFlags: 0
@@ -64924,7 +64926,7 @@ MonoBehaviour:
   - {fileID: 2081862042}
   - {fileID: 1657089636}
   uniScript: {fileID: 0}
-  startButton: {fileID: 0}
+  startButton: []
 --- !u!114 &1799352997
 MonoBehaviour:
   m_ObjectHideFlags: 0

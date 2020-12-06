@@ -41,7 +41,6 @@ public class Shoppanelcoroutine : MonoBehaviour
     IEnumerator Shopupperpanelcoroutine()
     {
         shopupperpanel.anchoredPosition=new Vector2(0,237);
-        
         while (shopupperpanel.anchoredPosition.y>1 )
         {
             //yield return new WaitForSeconds(0.001f);
@@ -120,7 +119,7 @@ public class Shoppanelcoroutine : MonoBehaviour
     }
     void Update()
     {
-        changecolor();
+        //changecolor();
 
     }
 }

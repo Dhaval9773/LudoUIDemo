@@ -37,7 +37,7 @@ public class Upperpanel : MonoBehaviour
         Debug.Log("Enable",this);
     }
     
-    void Start()
+    /*void Start()
     {
         enable.SetActive(true);
         image.color = ActiveColor; 
@@ -55,5 +55,5 @@ public class Upperpanel : MonoBehaviour
             obj.color = DeactiveColor;
         }
         Debug.Log("Start",this);
-    }
+    }*/
 }

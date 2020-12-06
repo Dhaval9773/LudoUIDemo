@@ -10,12 +10,13 @@ public class ShopButton : MonoBehaviour
 
     public Universal uniScript;
 
-    public GameObject startButton;
+    public List<GameObject> startButton;
    
     
 
     public void goToShopPanel()
     {
+        print("gotoshop");
         foreach (GameObject obj in Disable)
         {
             obj.SetActive(false);
@@ -24,7 +25,12 @@ public class ShopButton : MonoBehaviour
         {
             obj.SetActive(true);
         }
-        uniScript.OnActive(startButton);
+        print("bydefault");
+        foreach (GameObject obj in startButton)
+        {
+            uniScript.OnActive(obj);
+        }
+        
     }
     
 

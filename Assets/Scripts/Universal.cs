@@ -41,10 +41,13 @@ public class Universal : MonoBehaviour
         //Active button
         // print(obj.name);
         obj.transform.GetChild(0).gameObject.SetActive(true);
+        print("bg active");
         obj.transform.GetChild(1).GetComponent<TMP_Text>().color = ActiveColor;
+        print("text dark");
         obj.transform.GetChild(2).gameObject.SetActive(true);
-        
-        
+        print("panel active");
+
+
         //Deactive button
         foreach (GameObject obj1 in DeactiveList)
         {
