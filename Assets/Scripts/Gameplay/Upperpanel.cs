@@ -15,6 +15,10 @@ public class Upperpanel : MonoBehaviour
     public Color32 ActiveColor;
     public Color32 DeactiveColor;
 
+    private void Start()
+    {
+        
+    }
     public void Enabledisable()
     {
 

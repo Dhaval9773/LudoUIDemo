@@ -9,7 +9,11 @@ public class currencybydefault : MonoBehaviour
     public Universal uniScript;
 
     public GameObject startButton;
-    
+    private void Start()
+    {
+        
+    }
+
     public void bydefault()
     {
         print("gems bydefault");
