@@ -23,31 +23,29 @@ public class Shoppanelcoroutine : MonoBehaviour
         StartCoroutine(Shopupperpanelcoroutine());
         StartCoroutine(gemscoinscoroutine());
     }
-    IEnumerator gemscoinscoroutine()
+    IEnumerator gemscoinscoroutine()    
     {
-        /*gemsPanel.anchoredPosition=new Vector2(-261,1);
-        coinsPanel.anchoredPosition=new Vector2(-261,1);
-        while (gemsPanel.anchoredPosition.x<1 &&     gemsPanel.anchoredPosition.x<1)
+        gemsPanel.anchoredPosition=new Vector2(-600,1.52f);
+        coinsPanel.anchoredPosition=new Vector2(600,1.52f);
+        while (gemsPanel.anchoredPosition.x<-1.8 &&     coinsPanel.anchoredPosition.x>2.9)
         {
-            gemsPanel.anchoredPosition=new Vector2(gemsPanel.anchoredPosition.x+1,1);
-            coinsPanel.anchoredPosition=new Vector2(coinsPanel.anchoredPosition.x+1,1);*/
-            print(gemsPanel.anchoredPosition.x);
-            print(coinsPanel.anchoredPosition.x);
-            print(gemsPanel.anchoredPosition.y);
+            gemsPanel.anchoredPosition=new Vector2(gemsPanel.anchoredPosition.x+5,1.52f);
+            coinsPanel.anchoredPosition=new Vector2(coinsPanel.anchoredPosition.x-5,1.52f);
             yield return null;
-        //}
+        }
         
     }
     
     IEnumerator Shopupperpanelcoroutine()
     {
         shopupperpanel.anchoredPosition=new Vector2(0,237);
-        while (shopupperpanel.anchoredPosition.y>1 )
+        currencyGameplayDealsPanel.anchoredPosition=new Vector2(-3,-237);
+        while (shopupperpanel.anchoredPosition.y>-0.5f && currencyGameplayDealsPanel.anchoredPosition.y<0)
         {
-            //yield return new WaitForSeconds(0.001f);
-            shopupperpanel.anchoredPosition=new Vector2(0,shopupperpanel.anchoredPosition.y-5);
-            
-            //print(upperpanel.anchoredPosition.y);
+            shopupperpanel.anchoredPosition=new Vector2(0,shopupperpanel.anchoredPosition.y-1);
+            Debug.Log(shopupperpanel.anchoredPosition.y);
+            currencyGameplayDealsPanel.anchoredPosition=new Vector2(-3,currencyGameplayDealsPanel.anchoredPosition.y+1);
+            Debug.Log(currencyGameplayDealsPanel.anchoredPosition.y);
             yield return null;
         }
     }
@@ -92,19 +90,19 @@ public class Shoppanelcoroutine : MonoBehaviour
         {
             Imagecolour.color+=new Color(0,0,0,i);
             i+=0.01f;
-            // print(i);
+             print(i);
         }
         else
         {
             Imagecolour.color+=new Color(0,0,0,i);
             i-=0.01f;
-            // print(i);
+               print(i);
             abc = false;
         }
     }
     void Update()
     {
-        //changecolor();
+        changecolor();
 
     }
 }

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class ShopBackButton : MonoBehaviour
 {
-    public List<GameObject> Disable;
-    public List<GameObject> Enable;
+    /*public List<GameObject> Disable;
+    public List<GameObject> Enable;*/
 
     public Shoppanelcoroutine xyz;
 
@@ -18,14 +18,14 @@ public class ShopBackButton : MonoBehaviour
 
     public void goToMainManu()
     {
-        foreach (GameObject obj in Disable)
+        /*foreach (GameObject obj in Disable)
         {
             obj.SetActive(false);
         }
         foreach (GameObject obj in Enable)
         {
             obj.SetActive(true);
-        }
+        }*/
 
         xyz.abc = true;
         a.i = 0;
