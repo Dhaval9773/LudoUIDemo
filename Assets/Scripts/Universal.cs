@@ -37,7 +37,7 @@ public class Universal : MonoBehaviour
     
     public void onClick(GameObject obj)
     {
-        Debug.Log("Event is clicked");
+       // Debug.Log("Event is clicked");
         print(obj.gameObject.name);
     }
     
@@ -47,7 +47,7 @@ public class Universal : MonoBehaviour
         //Active button
         obj.transform.GetChild(0).gameObject.SetActive(true);
         obj.transform.GetChild(1).GetComponent<TMP_Text>().color = ActiveColor;
-        obj.transform.GetChild(2).gameObject.SetActive(true);
+        //obj.transform.GetChild(2).gameObject.SetActive(true);
         //Deactive button
         foreach (GameObject obj1 in DeactiveList)
         {
@@ -55,7 +55,7 @@ public class Universal : MonoBehaviour
             {
                 obj1.transform.GetChild(0).gameObject.SetActive(false);
                 obj1.transform.GetChild(1).GetComponent<TMP_Text>().color = DeactiveColor;
-                obj1.transform.GetChild(2).gameObject.SetActive(false);   
+                //obj1.transform.GetChild(2).gameObject.SetActive(false);   
             }
         }
     }
@@ -74,6 +74,5 @@ public class Universal : MonoBehaviour
             }
         }
     }
-    
 }
 

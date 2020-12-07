@@ -1,4 +1,4 @@
-﻿using System;
+﻿          using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -21,20 +21,21 @@ public class Shoppanelcoroutine : MonoBehaviour
         
         StartCoroutine(firstrechargepanelcoroutine());
         StartCoroutine(Shopupperpanelcoroutine());
+        StartCoroutine(gemscoinscoroutine());
     }
     IEnumerator gemscoinscoroutine()
     {
-        gemsPanel.anchoredPosition=new Vector2(-261,1);
+        /*gemsPanel.anchoredPosition=new Vector2(-261,1);
         coinsPanel.anchoredPosition=new Vector2(-261,1);
         while (gemsPanel.anchoredPosition.x<1 &&     gemsPanel.anchoredPosition.x<1)
         {
-            //yield return new WaitForSeconds(0.001f);
-            //print(shopsocial.anchoredPosition.x);
             gemsPanel.anchoredPosition=new Vector2(gemsPanel.anchoredPosition.x+1,1);
-            gemsPanel.anchoredPosition=new Vector2(gemsPanel.anchoredPosition.x+1,1);
-            //print(upperpanel.anchoredPosition.y);
+            coinsPanel.anchoredPosition=new Vector2(coinsPanel.anchoredPosition.x+1,1);*/
+            print(gemsPanel.anchoredPosition.x);
+            print(coinsPanel.anchoredPosition.x);
+            print(gemsPanel.anchoredPosition.y);
             yield return null;
-        }
+        //}
         
     }
     
@@ -83,23 +84,7 @@ public class Shoppanelcoroutine : MonoBehaviour
         }
     }
 
-    /*IEnumerator RewardChestcoroutine()
-    {
-        rewardchest.transform.localScale=new Vector2(.1f,.1f);
-        while (rewardchest.transform.localScale.x<1.2 && rewardchest.transform.localScale.y<1.2)
-        {
-            yield return new WaitForSeconds(.01f);
-            rewardchest.transform.localScale=new Vector2(rewardchest.transform.localScale.x+.1f,rewardchest.transform.localScale.y+.1f);
-            //print("scale");
-        }
-         
-        while (rewardchest.transform.localScale.x>1 && rewardchest.transform.localScale.y>1)
-        {
-            yield return new WaitForSeconds(.01f);
-            rewardchest.transform.localScale=new Vector2(rewardchest.transform.localScale.x-.01f,rewardchest.transform.localScale.y-.01f);
-            //print("scale");
-        }
-    }*/
+   
     public void changecolor()
     {
         Imagecolour.color=new Color(0,0,0,i);
